@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 // to fix, pass an empty array as the second argument for useEffect
 function DogPics() {
   const [images, setImages] = useState([]);
-
+  
   useEffect(() => {
     console.log("useEffect");
     fetch("https://dog.ceo/api/breeds/image/random/3")
